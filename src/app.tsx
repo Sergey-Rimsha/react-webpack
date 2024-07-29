@@ -1,11 +1,11 @@
 import './app.scss'
-import {Counter} from "./components/counter/counter";
+import {RouterProvider} from "react-router-dom";
+import {router} from "./router";
 
 export const App = () => {
     return (
         <div className={'app'}>
-            <div>Hello react</div>
-            <Counter/>
+            <RouterProvider router={router} fallbackElement={<p>Loading...</p>} />
         </div>
     )
 }
