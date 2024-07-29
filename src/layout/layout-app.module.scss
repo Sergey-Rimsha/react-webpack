@@ -1,0 +1,14 @@
+
+.layoutApp {
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  width: 200px;
+  border-radius: 10px;
+  padding: 5px;
+  gap: 5px;
+}

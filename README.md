@@ -5,3 +5,4 @@
 4) Подключаем React, react-dom, добавляем sass-loader
 5) Подключаем MiniCssExtractPlugin, и module.scss
 6) Добавили react-router-dom
+7) Добавили глобальные стили Theme, ThemeContext, useTheme
