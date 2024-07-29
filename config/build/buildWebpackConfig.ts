@@ -28,7 +28,7 @@ export function buildWebpackConfig(options: BuildOptions): webpack.Configuration
             rules - здесь конфигурируем Лоадеры они нужны для обрабтки
             фалов которые которые выходят за рамки .js (.ts, .png, .gp, .scss)
              */
-            rules: buildLoaders(),
+            rules: buildLoaders(options),
         },
         resolve: buildResolvers(),
         devtool: isDev ? 'inline-source-map' : undefined,
