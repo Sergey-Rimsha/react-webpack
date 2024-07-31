@@ -6,4 +6,6 @@
 5) Подключаем MiniCssExtractPlugin, и module.scss.
 6) Добавили react-router-dom.
 7) Добавили глобальные стили Theme, ThemeContext, useTheme.
-8) Добавли helpers classNames
+8) Добавли helpers classNames.
+9) Изучение FSD.
+10) Внидрение FSD и настройка путей в TS и Webpack.

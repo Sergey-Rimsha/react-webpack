@@ -1,10 +1,10 @@
 import {RouterProvider} from "react-router-dom";
-import {router} from "./router";
+
 
 import './styles/index.scss'
-import React from "react";
-import {useTheme} from "./theme/useTheme";
-import {classNames} from "./helpers/class-names/class-names";
+import {router} from "app/router";
+import {useTheme} from "app/providers/theme-provider";
+import {classNames} from "shared/lib";
 
 export const App = () => {
     const {theme, toggleTheme} = useTheme()
