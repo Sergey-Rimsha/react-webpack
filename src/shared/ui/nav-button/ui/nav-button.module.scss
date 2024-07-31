@@ -1,0 +1,17 @@
+.navButton {
+  cursor: pointer;
+  border-radius: 6px;
+  width: 196px;
+  height: 38px;
+
+  font-weight: 400;
+  font-size: 16px;
+  color: #fdfdfd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navButtonActive {
+  background: var(--main-secondary-color);
+}
