@@ -1,7 +1,7 @@
 
-type AppRoute = 'MAIN' | 'ABOUT';
+type AppRoute = 'MAIN' | 'ARTICLE';
 
 export const Paths: Record<AppRoute, string> = {
     MAIN: '/',
-    ABOUT: '/about'
+    ARTICLE: '/article'
 } as const;

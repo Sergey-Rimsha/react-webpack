@@ -3,7 +3,7 @@ import webpack from "webpack";
 import {BuildOptions} from "./types/config";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
-export function buildPlugins({paths}: BuildOptions): webpack.WebpackPluginInstance[] {
+export function buildPlugins({paths, isDev}: BuildOptions): webpack.WebpackPluginInstance[] {
 
     return [
         // для создание в build html исхожного файла
@@ -18,5 +18,9 @@ export function buildPlugins({paths}: BuildOptions): webpack.WebpackPluginInstan
             filename: 'css/[name].[contenthash:8].css',
             chunkFilename: 'css/[name].[contenthash:8].css',
         }),
+        // для прокидывания переменных в приложение, также нужно добавить переменную в global.d.ts
+        new webpack.DefinePlugin( {
+            __IS_DEV__: JSON.stringify(isDev)
+        })
     ]
 }

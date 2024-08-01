@@ -16,10 +16,10 @@ export const router = createBrowserRouter([
                 }
             },
             {
-                path: Paths.ABOUT,
+                path: Paths.ARTICLE,
                 async lazy() {
-                    let {AboutPage} = await import('pages/about-page');
-                    return {Component: AboutPage}
+                    let {ArticlePage} = await import('pages/article-page');
+                    return {Component: ArticlePage}
                 }
             },
         ]
