@@ -12,5 +12,6 @@
 10) Внидрение FSD и настройка путей в TS и Webpack.
 #### Раздел 2
 11) Выносим paths в константы.
-12) Добавили цвета для theme, компонент NavButton, NavBar.
+12) Добавили цвета для theme, компонент NavButton, SideBar.
 13) Подключаем svg loader, file loader in webpack.
+14) Работа с SideBar.
