@@ -13,3 +13,4 @@
 #### Раздел 2
 11) Выносим paths в константы.
 12) Добавили цвета для theme, компонент NavButton, NavBar.
+13) Подключаем svg loader, file loader in webpack.
