@@ -1,15 +1,19 @@
-import {useTranslation} from "react-i18next";
+import { FC } from 'react';
 
-import s from './lang-switcher.module.scss'
+import { useTranslation } from 'react-i18next';
 
-export const LangSwitcher = () => {
-    const {t, i18n} = useTranslation('translation')
+import s from './lang-switcher.module.scss';
 
-    const onToggleLanguage = () => {
-        i18n.changeLanguage(i18n.language === 'ru' ? 'en': 'ru')
-    }
+export const LangSwitcher: FC = () => {
+  const { t, i18n } = useTranslation('translation');
 
-    return (
-        <button className={s.languageSwitcher} onClick={onToggleLanguage}>{t('language')}</button>
-    );
+  const onToggleLanguage = (): void => {
+    i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru');
+  };
+
+  return (
+    <button type="button" className={s.languageSwitcher} onClick={onToggleLanguage}>
+      {t('language')}
+    </button>
+  );
 };

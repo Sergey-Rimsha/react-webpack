@@ -5,7 +5,9 @@
   "scripts": {
     "start": "webpack serve --env port=3000",
     "build:prod": "webpack --env mode=production",
-    "build:dev": "webpack --env mode=development"
+    "build:dev": "webpack --env mode=development",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "keywords": [],
   "author": "",
@@ -19,10 +21,20 @@
     "@types/react-dom": "^18.3.0",
     "@types/webpack": "^5.28.5",
     "@types/webpack-dev-server": "^4.7.2",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
     "css-loader": "^6.6.0",
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-import-resolver-node": "^0.3.9",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.5.3",
+    "prettier": "^3.3.3",
     "react-refresh": "^0.14.2",
     "sass": "^1.49.9",
     "sass-loader": "^12.6.0",
@@ -35,6 +47,7 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
+
     "i18next": "^23.12.2",
     "i18next-browser-languagedetector": "^8.0.0",
     "i18next-http-backend": "^2.5.2",

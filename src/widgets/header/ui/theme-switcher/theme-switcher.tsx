@@ -1,15 +1,16 @@
-import React from 'react';
-import {useTheme} from "app/providers/theme-provider";
+import { FC } from 'react';
 
-import s from './theme-switcher.module.scss'
+import s from './theme-switcher.module.scss';
 
-import ThemeIcon from 'shared/assets/icons/theme.svg'
+import { useTheme } from 'app/providers/theme-provider';
+import ThemeIcon from 'shared/assets/icons/theme.svg';
 
-export const ThemeSwitcher = () => {
-    const {toggleTheme} = useTheme()
-    return (
-        <button className={s.themeSwitcher} onClick={toggleTheme}>
-            <ThemeIcon className={s.svg} />
-        </button>
-    );
+export const ThemeSwitcher: FC = () => {
+  const { toggleTheme } = useTheme();
+
+  return (
+    <button type="button" className={s.themeSwitcher} onClick={toggleTheme} aria-label="theme">
+      <ThemeIcon className={s.svg} />
+    </button>
+  );
 };

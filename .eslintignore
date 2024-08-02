@@ -1,0 +1,6 @@
+*.css
+*.scss
+*.json
+*.d.ts
+android
+dist

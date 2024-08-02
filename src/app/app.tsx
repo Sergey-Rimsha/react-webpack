@@ -1,17 +1,19 @@
-import {RouterProvider} from "react-router-dom";
+import { FC } from 'react';
 
+import { RouterProvider } from 'react-router-dom';
 
-import './styles/index.scss'
-import {router} from "app/router";
-import {useTheme} from "app/providers/theme-provider";
-import {classNames} from "shared/lib";
+import './styles/index.scss';
 
-export const App = () => {
-    const {theme} = useTheme()
+import { useTheme } from 'app/providers/theme-provider';
+import { router } from 'app/router';
+import { classNames } from 'shared/lib';
 
-    return (
-        <div className={classNames('app', {}, [theme])}>
-            <RouterProvider router={router} fallbackElement={<p>Loading...</p>}/>
-        </div>
-    )
-}
+export const App: FC = () => {
+  const { theme } = useTheme();
+
+  return (
+    <div className={classNames('app', {}, [theme])}>
+      <RouterProvider router={router} fallbackElement={<p>Loading...</p>} />
+    </div>
+  );
+};

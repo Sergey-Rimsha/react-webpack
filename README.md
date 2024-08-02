@@ -17,3 +17,5 @@
 14) Работа с SideBar.
 15) Подключаем i18n и DefinePlugin в webpack.
 16) Подключаем HotModuleReplacementPlugin и ReactRefreshWebpackPlugin.
+17) Не подключал Babel Extract plugin.
+18) Подключил eslint и prettier.

@@ -1,19 +1,20 @@
-import React from 'react';
-import {Outlet} from "react-router-dom";
+import { FC } from 'react';
 
-import s from './layout-app.module.scss'
-import {Header} from "widgets/header";
-import {SideBar} from "widgets/side-bar";
+import { Outlet } from 'react-router-dom';
 
-export const LayoutApp = () => {
+import s from './layout-app.module.scss';
 
-    return (
-        <div className={s.layoutApp}>
-           <SideBar />
-            <div className={s.content}>
-                <Header/>
-                <Outlet/>
-            </div>
-        </div>
-    );
+import { Header } from 'widgets/header';
+import { SideBar } from 'widgets/side-bar';
+
+export const LayoutApp: FC = () => {
+  return (
+    <div className={s.layoutApp}>
+      <SideBar />
+      <div className={s.content}>
+        <Header />
+        <Outlet />
+      </div>
+    </div>
+  );
 };

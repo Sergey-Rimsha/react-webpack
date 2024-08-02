@@ -1,15 +1,18 @@
-import {ThemeSwitcher} from "../theme-switcher/theme-switcher";
+import { FC } from 'react';
 
-import s from './header.module.scss'
-import avatar from 'shared/assets/images/avatar.png'
-import {LangSwitcher} from "../lang-switcher/lang-switcher";
+import { LangSwitcher } from '../lang-switcher/lang-switcher';
+import { ThemeSwitcher } from '../theme-switcher/theme-switcher';
 
-export const Header = () => {
-    return (
-        <header className={s.header}>
-            <ThemeSwitcher/>
-            <LangSwitcher/>
-            <img className={s.img} src={avatar} alt={'avatar'}/>
-        </header>
-    );
+import s from './header.module.scss';
+
+import avatar from 'shared/assets/images/avatar.png';
+
+export const Header: FC = () => {
+  return (
+    <header className={s.header}>
+      <ThemeSwitcher />
+      <LangSwitcher />
+      <img className={s.img} src={avatar} alt="avatar" />
+    </header>
+  );
 };

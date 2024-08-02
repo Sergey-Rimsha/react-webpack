@@ -1,1 +1,1 @@
-export {Paths} from 'shared/config/paths/paths'
+export { Paths } from 'shared/config/paths/paths';
