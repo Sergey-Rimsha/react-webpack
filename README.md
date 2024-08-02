@@ -18,4 +18,5 @@
 15) Подключаем i18n и DefinePlugin в webpack.
 16) Подключаем HotModuleReplacementPlugin и ReactRefreshWebpackPlugin.
 17) Не подключал Babel Extract plugin.
-18) Подключил eslint и prettier.
+18) Подключаем eslint и prettier.
+19) Подключаем stylelint и eslint-plugin-i18next.

@@ -1,19 +1,21 @@
 .sideBar {
   display: flex;
   flex-direction: column;
-  padding: 30px 10px 32px 10px;
   gap: 8px;
-  border-radius: 0 10px 10px 0;
+
   width: 216px;
   height: 100%;
+  padding: 30px 10px 32px;
 
   background: var(--main-color);
+  border-radius: 0 10px 10px 0;
 }
 
 .title {
-  text-align: center;
-  font-weight: 700;
-  font-size: 16px;
-  color: #fdfdfd;
   margin-bottom: 11px;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: #fdfdfd;
+  text-align: center;
 }

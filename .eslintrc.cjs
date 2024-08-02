@@ -9,6 +9,7 @@ module.exports = {
 		'airbnb-typescript',
 		"airbnb/hooks",
 		"plugin:prettier/recommended",
+		"plugin:i18next/recommended"
 	],
 	parser: "@typescript-eslint/parser",
 	parserOptions: {
@@ -19,13 +20,14 @@ module.exports = {
 		sourceType: 'module',
 		project: "./tsconfig.json",
 	},
-	// plugins: ['prettier'],
+	plugins: ['prettier', "i18next"],
 	// overrides: [
 	// 	{
 	// 		files: ['.js', '.ts', '.jsx', '.tsx', '**/*.spec.js', '**/*.test.ts', '**/*.test.tsx', '**/*.spec.tsx'],
 	// 	},
 	// ],
 	rules: {
+		"i18next/no-literal-string": ['warn', {markupOnly: true}],
 		'max-len': [
 			'error',
 			{
