@@ -16,3 +16,4 @@
 13) Подключаем svg loader, file loader in webpack.
 14) Работа с SideBar.
 15) Подключаем i18n и DefinePlugin в webpack.
+16) Подключаем HotModuleReplacementPlugin и ReactRefreshWebpackPlugin.

@@ -2,6 +2,7 @@ import HTMLWebpackPlugin from "html-webpack-plugin";
 import webpack from "webpack";
 import {BuildOptions} from "./types/config";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
+import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 
 export function buildPlugins({paths, isDev}: BuildOptions): webpack.WebpackPluginInstance[] {
 
@@ -21,6 +22,9 @@ export function buildPlugins({paths, isDev}: BuildOptions): webpack.WebpackPlugi
         // для прокидывания переменных в приложение, также нужно добавить переменную в global.d.ts
         new webpack.DefinePlugin( {
             __IS_DEV__: JSON.stringify(isDev)
-        })
+        }),
+        // для быстрого изменнеия без перезагрузки страниц
+        new ReactRefreshWebpackPlugin(),
+        new webpack.HotModuleReplacementPlugin(),
     ]
 }
