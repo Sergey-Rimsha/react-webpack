@@ -24,6 +24,14 @@ export const router = createBrowserRouter([
           return { Component: ArticlePage };
         },
       },
+      {
+        path: Paths.NOT_FOUND,
+        async lazy() {
+          const { NotFoundPage } = await import('pages/not-found-page');
+
+          return { Component: NotFoundPage };
+        },
+      },
     ],
   },
 ]);

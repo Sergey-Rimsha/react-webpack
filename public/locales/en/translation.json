@@ -1,5 +1,6 @@
 {
   "main": "Main",
   "article": "Article",
-  "language": "EN"
+  "language": "EN",
+  "not-found": "Not found 404"
 }
