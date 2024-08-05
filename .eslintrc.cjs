@@ -32,6 +32,7 @@ module.exports = {
 			'error',
 			{
 				code: 120,
+				ignoreComments: true
 			},
 		],
 		'import/order': [
@@ -123,6 +124,7 @@ module.exports = {
 				allowExpressions: true,
 			},
 		],
+
 	},
 	settings: {
 		'import/parsers': {

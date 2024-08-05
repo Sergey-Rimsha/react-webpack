@@ -31,6 +31,17 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
     ],
   };
 
+  const babelLoader = {
+    test: /\.(js|jsx|tsx)$/,
+    exclude: /node_modules/,
+    use: {
+      loader: 'babel-loader',
+      options: {
+        presets: ['@babel/preset-env'],
+      },
+    },
+  };
+
   const typeScriptLoader = {
     test: /\.tsx?$/,
     // loader которые используется для обработки .ts
@@ -50,5 +61,5 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
   };
 
   // порядок в которм возращаются loaders в Array имеет значение
-  return [fileLoader, svgLoader, typeScriptLoader, cssLoader];
+  return [fileLoader, svgLoader, babelLoader, typeScriptLoader, cssLoader];
 }
