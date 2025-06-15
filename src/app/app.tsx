@@ -4,10 +4,12 @@ import { RouterProvider } from 'react-router-dom';
 
 import './styles/index.scss';
 
-import { useTheme } from 'app/providers/theme-provider';
+import { useTheme } from 'app/providers';
 import { router } from 'app/router';
 import { classNames } from 'shared/lib';
-import { Loader } from 'shared/ui/loader';
+import { Loader } from 'shared/ui';
+
+import 'shared/config/i18n/i18n';
 
 export const App: FC = () => {
   const { theme } = useTheme();

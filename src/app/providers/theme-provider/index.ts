@@ -1,2 +1,2 @@
-export { ThemeProvider } from './ui/theme-provider';
+export * from './ui';
 export { useTheme } from './lib/useTheme';

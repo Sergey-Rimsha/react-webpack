@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 
-import { LayoutApp } from 'app/layout/layout-app';
+import { LayoutApp } from 'app/layout';
 import { Paths } from 'shared/config';
 
 export const router = createBrowserRouter([

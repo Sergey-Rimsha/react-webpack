@@ -1,6 +1,6 @@
 import { ComponentPropsWithoutRef, FC, useMemo, useState } from 'react';
 
-import { LOCAL_STORAGE_THEME_KEY, THEME, Theme, ThemeContext } from 'app/providers/theme-provider/lib/theme-context';
+import { LOCAL_STORAGE_THEME_KEY, THEME, Theme, ThemeContext } from '../lib/theme-context';
 
 const defaultTheme = (localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme) || THEME.LIGHT;
 
@@ -12,7 +12,7 @@ export const ThemeProvider: FC<ComponentPropsWithoutRef<'div'>> = ({ children })
       theme,
       setTheme,
     }),
-    [theme]
+    [theme],
   );
 
   return <ThemeContext.Provider value={defaultProps}>{children}</ThemeContext.Provider>;

@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
-import { LangSwitcher } from '../lang-switcher/lang-switcher';
-import { ThemeSwitcher } from '../theme-switcher/theme-switcher';
+import { LangSwitcher } from '../lang-switcher';
+import { ThemeSwitcher } from '../theme-switcher';
 
 import s from './header.module.scss';
 

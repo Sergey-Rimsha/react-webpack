@@ -10,7 +10,7 @@ interface NavButtonProps extends NavLinkProps {
   className?: string;
 }
 
-export const NavButton: FC<NavButtonProps> = (props) => {
+export const NavButton: FC<NavButtonProps> = props => {
   const { to, className, children, ...rest } = props;
 
   const classActive = ({ isActive }: { isActive: boolean }): string => {

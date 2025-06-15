@@ -4,8 +4,7 @@ import { Outlet } from 'react-router-dom';
 
 import s from './layout-app.module.scss';
 
-import { Header } from 'widgets/header';
-import { SideBar } from 'widgets/side-bar';
+import { Header, SideBar } from 'widgets';
 
 export const LayoutApp: FC = () => {
   return (
