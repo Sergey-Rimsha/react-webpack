@@ -22,3 +22,4 @@
 19) Подключаем stylelint и eslint-plugin-i18next.
 20) Подключаем jest и Babel.
 21) Добавляем loader и NotPageFound 404.
+22) Добавил ErrorBoundary и PageError

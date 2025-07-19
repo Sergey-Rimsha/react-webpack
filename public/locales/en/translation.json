@@ -3,5 +3,7 @@
   "main": "Main",
   "article": "Article",
   "language": "EN",
-  "not-found": "Page not found 404"
+  "not-found": "Page not found 404",
+  "reload_page": "Reloaded page",
+  "page_error_title": "Something went wrong."
 }
