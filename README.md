@@ -23,3 +23,4 @@
 20) Подключаем jest и Babel.
 21) Добавляем loader и NotPageFound 404.
 22) Добавил ErrorBoundary и PageError
+23) Добавил BundleAnalyzerPlugin
