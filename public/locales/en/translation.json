@@ -1,6 +1,7 @@
 {
+  "logo": "React Webpack",
   "main": "Main",
   "article": "Article",
   "language": "EN",
-  "not-found": "Not found 404"
+  "not-found": "Page not found 404"
 }

@@ -14,7 +14,6 @@ export const SideBar: FC = () => {
 
   return (
     <nav className={s.sideBar}>
-      <h4 className={s.title}>React Webpack</h4>
       <NavButton to={Paths.MAIN}>
         <HomeIcon />
         {t('main')}
