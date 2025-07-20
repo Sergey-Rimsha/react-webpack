@@ -22,5 +22,7 @@
 19) Подключаем stylelint и eslint-plugin-i18next.
 20) Подключаем jest и Babel.
 21) Добавляем loader и NotPageFound 404.
+#### Раздел 3
 22) Добавил ErrorBoundary и PageError
 23) Добавил BundleAnalyzerPlugin
+24) Добавил React Testing Library и настроили

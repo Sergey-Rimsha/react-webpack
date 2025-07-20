@@ -13,12 +13,12 @@ export const SideBar: FC = () => {
   const { t } = useTranslation(['translation']);
 
   return (
-    <nav className={s.sideBar}>
-      <NavButton to={Paths.MAIN}>
+    <nav className={s.sideBar} data-testid="side-bar">
+      <NavButton to={Paths.MAIN} data-testid="main-nav-btn">
         <HomeIcon />
         {t('main')}
       </NavButton>
-      <NavButton to={Paths.ARTICLE}>
+      <NavButton to={Paths.ARTICLE} data-testid="article-nav-btn">
         <ArticleIcon />
         {t('article')}
       </NavButton>

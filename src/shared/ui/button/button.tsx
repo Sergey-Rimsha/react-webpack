@@ -1,4 +1,4 @@
-import { ComponentPropsWithoutRef, ElementType, ReactElement, ReactNode, useEffect } from 'react';
+import { ComponentPropsWithoutRef, ElementType, ReactElement, ReactNode } from 'react';
 
 import s from './button.module.scss';
 
@@ -19,12 +19,12 @@ export const Button = <T extends ElementType = 'button'>(props: ButtonProps<T>):
   //
   // const styleButton = classNames(s.button, s[variant], fullWidth && s.fullWidth);
 
-  useEffect(() => {
-    console.log(variant);
-  }, [variant]);
+  // useEffect(() => {
+  //   console.log(variant);
+  // }, [variant]);
 
   return (
-    <Component className={classNames(s.button, {}, [className])} {...rest}>
+    <Component className={classNames(s.button, {}, [s[variant], className])} {...rest}>
       {children}
     </Component>
   );

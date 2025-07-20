@@ -6,10 +6,11 @@ import './styles/index.scss';
 
 import { useTheme } from 'app/providers';
 import { router } from 'app/router';
+import { startI18n } from 'shared/config';
 import { classNames } from 'shared/lib';
 import { Loader } from 'shared/ui';
 
-import 'shared/config/i18n/i18n';
+startI18n().then();
 
 export const App: FC = () => {
   const { theme } = useTheme();
